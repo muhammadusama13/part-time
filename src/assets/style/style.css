@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+/* App.css */
+/* App.css */
+.sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.droppable-section {
+    width: 45%;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    min-height: 150px;
+    background-color: #f9f9f9;
+}
+
+.droppable-section.over {
+    border-color: #007bff;
+}
+
+.draggable-item {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.draggable-item.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
